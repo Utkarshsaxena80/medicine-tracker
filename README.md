@@ -2,8 +2,6 @@
 
 MediTrack is a modern, user-friendly web application for tracking daily medication intake. Built with React and featuring a clean, intuitive interface, it helps users maintain their medication schedule and monitor their adherence.
 
-![MediTrack Interface](https://images.pexels.com/photos/4021808/pexels-photo-4021808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-
 ## Features
 
 - **Medication Management**
