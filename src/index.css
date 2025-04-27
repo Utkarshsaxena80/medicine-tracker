@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  @apply bg-neutral-50 text-neutral-800;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 shadow-sm;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+  
+  .btn-outline {
+    @apply border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 active:bg-neutral-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md border border-neutral-200 overflow-hidden;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .label {
+    @apply block text-sm font-medium text-neutral-700 mb-1;
+  }
+  
+  .pill {
+    @apply px-3 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .pill-success {
+    @apply bg-success-50 text-success-700;
+  }
+  
+  .pill-warning {
+    @apply bg-warning-50 text-warning-700;
+  }
+  
+  .pill-error {
+    @apply bg-error-50 text-error-700;
+  }
+}
